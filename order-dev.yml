@@ -6,6 +6,11 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/sell?characterEncoding=utf8&useSSL=true&ENGINE=InnoD
     username: root
     password: 123456789
+    rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
   jpa:
     show-sql: true
     hibernate:
