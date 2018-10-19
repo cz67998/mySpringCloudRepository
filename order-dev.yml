@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: order
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/sell?characterEncoding=utf8&useSSL=true&ENGINE=InnoD
+    username: root
+    password: 123456789
+  jpa:
+    show-sql: true
+    hibernate:
+          ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+          #      naming:
+          #        strategy: org.hibernate.cfg.ImprovedNamingStrategy
+          #        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+server:
+  port: 8081
+
+env:
+  dev1
+
+wangzhou:
+  age: 25
+  
+# #变ribbon负载均衡的规则
+# #PRODUCT:
+#  # ribbon:
+#   #   NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
