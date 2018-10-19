@@ -22,7 +22,7 @@ env:
   dev2
 
 wangzhou:
-  age: 12
+  age: 11
   
 # #变ribbon负载均衡的规则
 # #PRODUCT:
