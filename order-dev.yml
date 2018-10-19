@@ -19,7 +19,7 @@ server:
   port: 8081
 
 env:
-  dev2
+  dev3
 
 wangzhou:
   age: 10
