@@ -1,0 +1,20 @@
+##      给url地址起名字
+#  instance:
+#    hostname: eurekaclientName
+spring:
+  application:
+    name: gateway
+zuul:
+  routes:
+# /myProduct/product/list  ->  /product/product/list
+    aaaaa:
+      path: /myProduct/**
+      serviceId: product
+#      sensitiveHeaders:
+###简洁写法
+###product：/myProduct/**
+###排除某些路由
+#      ignored-patterns:
+#       - /**/product/listForOrder
+server:
+  port: 8083
