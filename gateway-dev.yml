@@ -1,9 +1,6 @@
 ##      给url地址起名字
 #  instance:
 #    hostname: eurekaclientName
-spring:
-  application:
-    name: gateway
 zuul:
   routes:
 # /myProduct/product/list  ->  /product/product/list
