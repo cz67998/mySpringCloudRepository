@@ -1,6 +1,4 @@
 spring:
-  application:
-    name: order
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/sell?characterEncoding=utf8&useSSL=true&ENGINE=InnoD
