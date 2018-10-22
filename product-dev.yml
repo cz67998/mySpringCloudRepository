@@ -19,4 +19,4 @@ spring:
           #        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
 
 server:
-  port: 8081
+  port: 8082
