@@ -2,7 +2,6 @@
 #  instance: 
 #    hostname: eurekaclientName
 zuul:
-  ignored-patterns:  - /**/product/listForOrder
 #全部服务忽略敏感头（全部服务都可传递cookie）
   sensitive-headers:
   routes:
