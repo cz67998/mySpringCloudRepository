@@ -1,20 +1,18 @@
 ##      给url地址起名字
-#  instance:
+#  instance: 
 #    hostname: eurekaclientName
 zuul:
+  ignored-patterns:  - /**/product/listForOrder
+#全部服务忽略敏感头（全部服务都可传递cookie）
+  sensitive-headers:
   routes:
 # /myProduct/product/list  ->  /product/product/list
     aaaaa:
       path: /myProduct/**
       serviceId: product
-    bbbbb:
-      path: /user/**
-      serviceId: user
-#      sensitiveHeaders:
+      sensitiveHeaders:
 ###简洁写法
 ###product：/myProduct/**
-###排除某些路由
-#      ignored-patterns:
-#       - /**/product/listForOrder
+###排除某些路由    
 server:
   port: 8083
