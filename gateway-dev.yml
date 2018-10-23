@@ -7,6 +7,9 @@ zuul:
     aaaaa:
       path: /myProduct/**
       serviceId: product
+    bbbbb:
+      path: /user/**
+      serviceId: user
 #      sensitiveHeaders:
 ###简洁写法
 ###product：/myProduct/**
