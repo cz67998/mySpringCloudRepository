@@ -10,6 +10,10 @@ zuul:
       path: /myProduct/**
       serviceId: product
       sensitiveHeaders:
+    bbbbb:
+      path: /user/**
+      serviceId: user
+      sensitiveHeaders:
 ###简洁写法
 ###product：/myProduct/**
 ###排除某些路由    
