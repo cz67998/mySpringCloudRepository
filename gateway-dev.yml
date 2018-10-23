@@ -20,6 +20,4 @@ zuul:
 ###排除某些路由    
 server:
   port: 8083
-management:
-  security:
-    enabled: false
+
