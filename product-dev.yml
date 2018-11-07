@@ -5,7 +5,7 @@ spring:
     username: root
     password: 123456789
   rabbitmq:
-    host: localhost
+    host: 134.175.140.187
     port: 5672
     username: guest
     password: guest
@@ -22,4 +22,4 @@ spring:
           #        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
 
 server:
-  port: 8082
+  port: 8084
