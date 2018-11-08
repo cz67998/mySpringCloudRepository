@@ -19,7 +19,7 @@ spring:
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
           #      naming:
           #        strategy: org.hibernate.cfg.ImprovedNamingStrategy
-          #        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+          #      #  physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
 
 server:
   port: 8084
