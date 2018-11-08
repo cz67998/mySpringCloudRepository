@@ -1,7 +1,7 @@
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/sell?characterEncoding=utf8&useSSL=true&ENGINE=InnoD
+    url: jdbc:mysql://134.175.140.187:3306/wechat?characterEncoding=utf8&useSSL=false
     username: root
     password: 123456789
  
