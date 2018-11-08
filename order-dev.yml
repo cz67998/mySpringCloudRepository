@@ -4,12 +4,6 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/sell?characterEncoding=utf8&useSSL=true&ENGINE=InnoD
     username: root
     password: 123456789
-  cloud:
-    config:
-      discovery:
-         enabled: true
-         service-id: CONFIG
-      profile: dev
   zipkin:
     base-url: http://134.175.140.187:9411
     locator:
