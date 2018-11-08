@@ -49,4 +49,33 @@ wangzhou:
 # #变ribbon负载均衡的规则
 # #PRODUCT:
 #  # ribbon:
-#   #   NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+#   #   NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRul
+#变ribbon负载均衡的规则,默认是轮询
+#PRODUCT:
+#  ribbon:
+#     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3000
+            #下面的不设置就默认1000
+    getProductInfoList:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3000
+
+
+feign:
+  hystrix:
+    enabled: true
+logging:
+  level:
+    org.springframework.cloud.openfeign: debug
+#management:
+#  server:
+#    servlet:
+#      context-path: /
