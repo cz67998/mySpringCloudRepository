@@ -28,7 +28,7 @@ env:
   dev3
 
 wangzhou:
-  age: 109001111
+  age: 1090011
   
 # #变ribbon负载均衡的规则
 # #PRODUCT:
