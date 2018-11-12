@@ -5,7 +5,7 @@ spring:
     username: root
     password: 123456789
   zipkin:
-    base-url: http://114.115.130.95:9411/zipkin/
+    base-url: http://zipkin:9411/
     locator:
       discovery:
         enabled: true
