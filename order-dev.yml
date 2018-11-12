@@ -4,17 +4,10 @@ spring:
     url: jdbc:mysql://134.175.140.187:3306/wechat?characterEncoding=utf8&useSSL=false
     username: root
     password: 123456789
-  zipkin:
-    base-url: http://114.115.130.95:9411/
-    enabled: true
-    service:
-      name: order
-    
-    sender:
-      type: rabbit
   sleuth:
     sampler:
       probability: 1.0
+      
   rabbitmq:
     host: 134.175.140.187
     port: 5672
@@ -23,6 +16,11 @@ spring:
   redis:
     host: 134.175.140.187
     port: 6379
+  zipkin:
+    base-url: http://114.115.130.95:9411/
+    enabled: true
+    service:
+      name: order
   jpa:
     show-sql: true
     hibernate:
