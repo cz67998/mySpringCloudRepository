@@ -6,6 +6,7 @@ spring:
     password: 123456789
   zipkin:
       base-url: http://zipkin:9411/
+      enabled: true
       service:
         name: product
   sleuth:
